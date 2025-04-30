@@ -1,3 +1,2 @@
 google.generativeai
 darkdetect
-tomllib

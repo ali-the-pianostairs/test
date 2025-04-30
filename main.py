@@ -3,7 +3,6 @@ import google.generativeai as genai
 import os
 import time
 import darkdetect
-import tomllib  # For Python 3.11+, you can use `import tomllib` instead
 
 # Configure Streamlit page
 st.set_page_config(
@@ -38,13 +37,8 @@ with st.sidebar:
 if "history" not in st.session_state:
     st.session_state.history = []  # list of (role, message, timestamp)
 
-# Load API key from secrets.toml
-with open("secrets.toml", "rb") as f:
-    secrets = tomli.load(f)
-api_key = secrets["api"]["key"]
-
 # API configuration
-genai.configure(api_key=api_key)
+genai.configure(api_key="AIzaSyAyw9rCiJidfvnrvMbdjjkGkV55RM4nvCA")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Chat container

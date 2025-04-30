@@ -3,7 +3,7 @@ import google.generativeai as genai
 import os
 import time
 import darkdetect
-import tomli  # For Python 3.11+, you can use `import tomllib` instead
+import tomllib  # For Python 3.11+, you can use `import tomllib` instead
 
 # Configure Streamlit page
 st.set_page_config(

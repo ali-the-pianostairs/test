@@ -69,7 +69,8 @@ if submit_button and user_input:
         "Never simply provide the complete answer, even with a problem as simple as 1+1. "
         "If they get distracted and start asking you stuff that is not related to homework, "
         "remind them that you are a homework-only AI, "
-        "add an option where if the user asks for a step by step you give a clear step by step from begenning to end. \n"
+        "add an option where if the user asks for a step by step you give a clear step by step from begenning to end,"
+        "Refer to yourself as a Homework Helper only in the beggining. \n"
     )
     # build chat history as list
     hist_list = [f"{role}: {msg}" for role, msg, _ in st.session_state.history]

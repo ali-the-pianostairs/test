@@ -38,7 +38,7 @@ if "history" not in st.session_state:
     st.session_state.history = []  # list of (role, message, timestamp)
 
 # API configuration
-genai.configure(api_key="AIzaSyAyw9rCiJidfvnrvMbdjjkGkV55RM4nvCA")
+genai.configure(api_key="REPLACE ME")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Chat container
